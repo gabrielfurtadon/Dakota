@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Candidate</title>
+    <link rel="stylesheet" href="style/info-Candidates-css.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/f0fb8c41b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+    <!------------SIDEBAR------------>
+    <div class="close sidebar">
+        <ul class="nav-list">
+        
+            <li>
+                <a href="/admin">
+                    <span class="material-symbols-outlined sid-icons">grid_view</span>
+                    <span class="link_name sid-icons">EMPLOYEES</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/admin">Employees</a></li>
+                    </ul>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/open-positions-admin">
+                    <span class="material-symbols-outlined sid-icons">business_center</span>
+                    <span class="link_name sid-icons">OPEN POSITIONS</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/open-positions-admin">Open Positions</a></li>
+                    </ul>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/profiles-admin">
+                    <span class="material-symbols-outlined sid-icons">group</span>
+                    <span class="link_name">PROFILES</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/profiles-admin">Profiles</a></li>
+                    </ul>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/talents-admin">
+                    <span class="material-symbols-outlined sid-icons">folder_special</span>
+                    <span class="link_name">TALENTS</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/talents-admin">Talents</a></li>
+                    </ul>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/archive-admin">
+                    <span class="material-symbols-outlined sid-icons">inventory_2</span>
+                    <span class="link_name">ARCHIVE</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/archive-admin">Archive</a></li>
+                    </ul>
+                </a>
+            </li>
+        
+        </ul>
+
+        <!------------LOGO TCS - FINAL SIDEBAR ------------>
+        <div class="tcs-details">
+            <div class="tcs-logo">
+                <img id="miniTCS" src="https://bucketdakota.s3.amazonaws.com/front-end/imgs/mini-logoTCS.png" alt="TCS">
+            </div>
+        </div>
+    </div>
+
+    <!------------MENU HAMB. E LOGO ISELECT------------>
+    <section class="home-section">
+        <div class="home-content">
+            <div class="backgIcon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    </section>
+    <div class="header-iSelect">
+        <h3>ISELECT</h3>
+        <div class="user-text">
+    
+            <div class="div-Icones">
+                <a href="/info-user-admin">
+                    <span class="material-symbols-outlined header-icons">account_circle</span>
+                </a>
+            
+                <a href="/">
+                    <span class="material-symbols-outlined header-icons">logout</span>
+                </a>
+            </div>
+    
+            <div class="user">
+                <span class="id-user">GABRIEL CAMACHO <br> A-2439193 </span>
+            </div>
+        </div>
+    
+    
+    </div>
+
+    <!------------JS SIDEBAR------------>
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".fa-bars");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+            backgIcon.classList.toggle("close");
+        });
+
+    </script>
+
+    <!------------ FIM DA SIDEBAR ------------>
+
+    <!---------------------------------->
+    <!------- CONTAINER E FORMS -------->
+
+    <div class="padding-container">
+
+        <div class="header-Page">
+            <div class="arrow-chevron">
+                <a class="arrow-chevron" href="/profiles-admin">
+                    <i class="fa-solid fa-chevron-left"></i></a>
+                <h1>Profile Candidate</h1>
+            </div>
+        </div>
+
+        <div class="div-Central">
+            <div class="div-IDCandidate">
+                <span class="profile_file_id">
+                    <h4>C0001</h4>
+                </span>
+
+            </div>
+
+            <div class="div-TitleCandidate">
+                <h2>| Candidate Profile and Feedback </h2>
+            </div>
+
+            <div class="div-Buttons">
+                <a href="/edit-infoCandidates-admin" class="edit-button">EDIT</a>
+            </div>
+        </div>
+
+        <h5>Registered by Allana Aparecida on 18/08/2022 07:00am | Last Updated by Allana Aparecida on 23/08/2022
+            08:51pm
+        </h5>
+
+        <div id="infoCandidatos">
+
+            <div class="ctnFlex">
+                <div class="left1">
+
+                    <span class="bold">Name:</span><br>
+                    <span class="full_name">Julia Bastos</span><br><br>
+
+                    <span class="bold">Interview Date:</span><br>
+                    <span class="shared_with_cust_date">20/06/2022 - 15h</span><br><br>
+
+                    <span class="bold">Location:</span><br>
+                    <span class="location">Londrina - Paraná</span><br><br>
+
+                    <span class="bold">E-mail:</span><br>
+                    <span class="email">juliabastos@gmail.com</span><br><br>
+
+                    <span class="bold">Phone:</span><br>
+                    <span class="phone">+55 (43) 99999-9999</span><br><br>
+
+                    <span class="bold">Resolution Comments:</span><br>
+                    <span class="resolution_comments"> Good communication, teamwork, respect for diversity. 2 years
+                        experience as a Junior in back-end. Superior System Analysis and Development course.
+                    </span><br><br>
+
+                    <span class="bold">Candidate Screening Resolution:</span><br>
+                    <span class="candidate_screening_resolution">Good communication, teamwork, respect for diversity. 2
+                        years experience as a Junior in back-end. Superior System Analysis and Development course.
+                    </span><br>
+                </div>
+
+                <!-- CAIXA 2 -->
+
+                <div class="center">
+                    <label for="feedback">
+                        <div style="font-weight:600;">Feedback:
+                    </label>
+                </div><br>
+                <label for="skill">
+                    <div style="font-weight:600;">Type/Main-skill:
+                </label>
+            </div><br>
+            <label for="salary_intention">
+                <div style="font-weight:600;">Salary Intention:
+            </label>
+        </div><br>
+        <label for="seniority">
+            <div style="font-weight:600;">Seniority Level:
+        </label>
+    </div><br>
+    <label for="spanish">
+        <div style="font-weight:600;">Spanish(Required):
+    </label></div><br>
+    <label for="english">
+        <div style="font-weight:600;">English(Required):
+    </label></div><br>
+    <label for="profile_source">
+        <div style="font-weight:600;">Profile Source:
+    </label></div><br>
+    <label for="name_role">
+        <div style="font-weight:600;">Role:
+    </label></div><br>
+    <label for="current_employer">
+        <div style="font-weight:600;">Current Employer:
+    </label></div><br>
+
+
+    </div>
+
+    <!-- CAIXA 3 -->
+
+
+    <div class="right2">
+        <span class="feedback"> APPROVED - In Hiring Process </span><br><br>
+        <span class="skill"> .NET CORE </span><br><br>
+        <span class="salary_intention"> 3.000,00 </span><br><br>
+        <span class="seniority"> Trainee(0-1 EXP. YEARS) </span><br><br>
+        <span class="spanish"> Intermediary </span><br><br>
+        <span class="english"> Intermediary </span><br><br>
+        <span class="profile_source"> - </span><br><br>
+        <span class="name_role"> Back-End Developer </span><br><br>
+        <span class="current_employer"> - </span><br><br>
+    </div>
+
+    </div>
+    </div>
+    <script>
+        async function getContent() {
+            try {
+                const response = await fetch('http://localhost:4565/')
+                //console.log(response)
+                const data = await response.json()
+                show(data)
+
+            } catch (error) {
+                console.error(error)
+            }
+
+            function show(users) {
+                let output = ''
+
+                for (let user of users) {
+                    output += `
+                                <div class="ctnFlex">
+                                    <div class="left1">
+                                            <span class="bold">Name:</span>
+                                            <br>
+                                            <span>${user.full_name}</span><br>
+                                       
+                                       <span class="bold">Data da entrevista:</span>
+                                        <br>
+                                        <span class="shared_with_cust_date">${user.shared_with_cust_date}</span><br>
+
+                                        <span class="bold">Location:</span>
+                                        <br>
+                                        <span class="bold">${user.location}</span><br>
+
+                                        <span class="bold">Email:</span>
+                                        <br>
+                                        <span class="email">${user.email}</span><br>
+
+                                        <span class="bold">Phone:</span>
+                                        <br>
+                                        <span class="phone">${user.phone}</span><br>
+
+                                        <span class="bold">Resolution comments:</span>
+                                        <br>
+                                        <span class="resolution_comments">${user.resolution_comments}</span><br>
+
+                                        <span class="bold">Candidate screening resolution:</span>
+                                        <br>
+                                        <span class="candidate_screening_resolution">${user.candidate_screening_resolution}</span><br>
+                                    </div>
+                                
+                                    <div class="right2">
+
+                                        <span class="bold">Name:</span>
+                                            <br>
+                                        <span class="feedback">${user.feedback}</span><br><br><br>
+                                        <span class="skill">${user.skill}</span><br><br>
+                                        <span class="salary_intention">${user.salary_intention}</span><br><br>
+                                        <span class="seniority">${user.seniority}</span><br><br><br>
+                                        <span class="spanish">${user.spanish}</span><br><br>
+                                        <span class="english">${user.english}</span><br><br>
+                                        <span class="profile_source">${user.profile_source}</span><br><br>
+                                        <span class="name_role">${user.name_role}</span><br><br>
+                                        <span class="current_employer">${user.current_employer}</span><br><br>
+                                    </div>
+                                </div>`
+
+                }
+                document.getElementById('infoCandidatos').innerHTML = output
+            }
+        }
+
+        getContent()
+    </script>
+
+    <script>
+
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
+</body>
+
+<footer></footer>
+
+
+
+</html>

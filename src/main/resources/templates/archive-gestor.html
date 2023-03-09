@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive</title>
+    <link rel="stylesheet" href="style/archive-css.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/f0fb8c41b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+     <!------------SIDEBAR------------>
+     <div class="close sidebar">
+
+        <ul class="nav-list">
+    
+            <li>
+                <a href="/manager">
+                    <span class="material-symbols-outlined sid-icons">business_center</span>
+                    <span class="link_name sid-icons">OPEN POSITIONS</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/manager">Open Positions</a></li>
+                    </ul>
+                </a>
+            </li>
+    
+    
+            <li>
+                <a href="/profiles-gestor">
+                    <span class="material-symbols-outlined sid-icons">group</span>
+                    <span class="link_name">PROFILES</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/profiles-gestor">Profiles</a></li>
+                    </ul>
+                </a>
+            </li>
+    
+            <li>
+                <a href="/talents-gestor">
+                    <span class="material-symbols-outlined sid-icons">folder_special</span>
+                    <span class="link_name">TALENTS</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/talents-gestor">Talents</a></li>
+                    </ul>
+                </a>
+            </li>
+    
+            <li>
+                <a href="/archive-gestor">
+                    <span class="material-symbols-outlined sid-icons">inventory_2</span>
+                    <span class="link_name">ARCHIVE</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/archive-gestor">Archive</a></li>
+                    </ul>
+                </a>
+            </li>
+    
+        </ul>
+
+        <!------------LOGO TCS - FINAL SIDEBAR ------------>
+        <div class="tcs-details">
+            <div class="tcs-logo">
+                <img id="miniTCS" src="https://bucketdakota.s3.amazonaws.com/front-end/imgs/mini-logoTCS.png" alt="TCS">
+            </div>
+        </div>
+    </div>
+
+    <!------------MENU HAMB. E LOGO ISELECT------------>
+    <section class="home-section">
+        <div class="home-content">
+            <div class="backgIcon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    </section>
+    <div class="header-iSelect">
+        <h3>ISELECT</h3>
+        <div class="user-text">
+    
+            <div class="div-Icones">
+            
+                <a href="/info-user-gestor">
+                    <span class="material-symbols-outlined header-icons">account_circle</span>
+                </a>
+            
+                <a href="/">
+                    <span class="material-symbols-outlined header-icons">logout</span>
+                </a>
+    
+            </div>
+    
+            <div class="user">
+                <span class="id-user">JÚLIA BASTOS <br> G-2897133 </span>
+            </div>
+        </div>
+    
+    
+    </div>
+
+    
+    <!------------JS SIDEBAR------------>
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".fa-bars");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+            backgIcon.classList.toggle("close");
+        });
+
+    </script>
+
+    <!------------ FIM DA SIDEBAR ------------>
+
+    <!---------------------------------->
+    <!------- CONTAINER E FORMS -------->
+
+    <div class="padding-container">
+
+        <div class="header-Page">
+            <h1>Archive</h1>
+        </div>
+
+        <div class="div-Central">
+            <div class="div-TitleWork">
+                <h2 style="width: 400px;">- Positions filed</h2>
+            </div>
+        </div>
+
+        <div id="archive">
+            <div class="column">
+                <div class="card" style="text-align:left;">
+                    <span class="id_open_position" style="font-size:17px; font-weight:600;
+              text-align:left;">BED1221 </span>
+                    <span class="title">Back-end Developer - SR</h3></span>
+                    <span class="customer">Bradesco</span>
+                    <span class="cluster">BFSI2</span>
+                    <span class="name_main_skill">.NET CORE</span>
+
+                    <div class="div-Status">
+                        <button type="submit" class="status-button-cancel">Filed</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card" style="text-align:left;">
+                    <span class="id_open_position" style="font-size:17px; font-weight:600;
+                text-align:left;">BED1222 </span>
+                    <span class="title">Back End Developer - JR</h3></span>
+                    <span class="customer">Bradesco</span>
+                    <span class="cluster">BFSI1</span>
+                    <span class="name_main_skill">Java</span>
+
+                    <div class="div-Status">
+                        <button type="submit" class="status-button-cancel">Filed</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column">
+                <div class="card" style="text-align:left;">
+                    <span class="id_open_position" style="font-size:17px; font-weight:600;
+                text-align:left;">ANLS0001 </span>
+                    <span class="title">Analista de Sistemas - JR</h3></span>
+                    <span class="customer">Bradesco</span>
+                    <span class="cluster">BFSI2</span>
+                    <span class="name_main_skill">Java</span>
+
+                    <div class="div-Status">
+                        <button type="submit" class="status-button">Done</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card" style="text-align:left;">
+                    <span class="id_open_position" style="font-size:17px; font-weight:600;
+                text-align:left;">ANLS0002 </span>
+                    <span class="title">Front-end - Trainee</h3></span>
+                    <span class="customer">AIG Brazil</span>
+                    <span class="cluster">BFSI-Brazil</span>
+                    <span class="name_main_skill">Angular</span>
+
+                    <div class="div-Status">
+                        <button type="submit" class="status-button">Done</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column">
+                <div class="card" style="text-align:left;">
+                    <span class="id_open_position" style="font-size:17px; font-weight:600;
+                    text-align:left;">ANLS0003 </span>
+                    <span class="title">Front-end - Trainee</h3></span>
+                    <span class="customer">CIELO S/A</span>
+                    <span class="cluster">BFSI</span>
+                    <span class="name_main_skill">React.js</span>
+
+                    <div class="div-Status">
+                        <button type="submit" class="status-button">Done</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column">
+                <div class="card" style="text-align:left;">
+                    <span class="id_open_position" style="font-size:17px; font-weight:600;
+                text-align:left;">ABD2322 </span>
+                    <span class="title">Analista Banco de Dados</h3></span>
+                    <span class="customer">Bradesco</span>
+                    <span class="cluster">BFSI2</span>
+                    <span class="name_main_skill">MySQL</span>
+
+                    <div class="div-Status">
+                        <button type="submit" class="status-button">Done</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column">
+                <div class="card" style="text-align:left;">
+                    <span class="id_open_position" style="font-size:17px; font-weight:600;
+                text-align:left;">AWS2542 </span>
+                    <span class="title">Analista de Dados - AWS</h3></span>
+                    <span class="customer">Bradesco</span>
+                    <span class="cluster">BFSI2</span>
+                    <span class="name_main_skill">Aurora SQL</span>
+
+                    <div class="div-Status">
+                        <button type="submit" class="status-button-cancel">Filed</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column">
+                <div class="card" style="text-align:left;">
+                    <span class="id_open_position" style="font-size:17px; font-weight:600;
+                text-align:left;">BED2322 </span>
+                    <span class="title">Back-end Developer - PL</h3></span>
+                    <span class="customer">Bradesco</span>
+                    <span class="cluster">BFSI1</span>
+                    <span class="name_main_skill">.NET</span>
+
+                    <div class="div-Status">
+                        <button type="submit" class="status-button-cancel">Filed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        async function getContent() {
+            try {
+                const response = await fetch('http://localhost:4565/')
+                //console.log(response)
+                const data = await response.json()
+                show(data)
+
+            } catch (error) {
+                console.error(error)
+            }
+
+            function show(users) {
+                let output = ''
+
+                for (let user of users) {
+                    output += `  
+                                <div class="column">
+              <div class="card" style="text-align:left;">
+                <span class="id_open_position" style="font-size:17px; font-weight:600;
+                text-align:left;">${user.id_open_position} </span>
+                <span class="title">${user.title}</h3></span>
+                <span class="customer">${user.customer}</span>
+                <span class="cluster">${user.cluster}</span>
+                <span class="name_main_skill">${user.name_main_skill}</span>
+                <div class="div-Status">
+                <button type="submit" class="status-button-cancel">${user.status}</button>
+                </div>
+
+              </div>
+            </div> `
+                }
+                document.getElementById('archive').innerHTML = output
+            }
+        }
+
+        getContent()
+    </script>
+
+
+</body>
+
+<footer></footer>
+
+<script>
+    function clickMenu() {
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+        } else {
+            itens.style.display = 'block'
+        }
+    }
+</script>
+
+</html>

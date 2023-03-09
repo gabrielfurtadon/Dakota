@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Info Vagas</title>
+    <link rel="stylesheet" href="style/edit-info-vagas-css.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/f0fb8c41b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+     <!------------SIDEBAR------------>
+     <div class="close sidebar">
+
+        <ul class="nav-list">
+    
+            <li>
+                <a href="/manager">
+                    <span class="material-symbols-outlined sid-icons">business_center</span>
+                    <span class="link_name sid-icons">OPEN POSITIONS</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/manager">Open Positions</a></li>
+                    </ul>
+                </a>
+            </li>
+    
+    
+            <li>
+                <a href="/profiles-gestor">
+                    <span class="material-symbols-outlined sid-icons">group</span>
+                    <span class="link_name">PROFILES</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/profiles-gestor">Profiles</a></li>
+                    </ul>
+                </a>
+            </li>
+    
+            <li>
+                <a href="/talents-gestor">
+                    <span class="material-symbols-outlined sid-icons">folder_special</span>
+                    <span class="link_name">TALENTS</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/talents-gestor">Talents</a></li>
+                    </ul>
+                </a>
+            </li>
+    
+            <li>
+                <a href="/archive-gestor">
+                    <span class="material-symbols-outlined sid-icons">inventory_2</span>
+                    <span class="link_name">ARCHIVE</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/archive-gestor">Archive</a></li>
+                    </ul>
+                </a>
+            </li>
+    
+        </ul>
+
+        <!------------LOGO TCS - FINAL SIDEBAR ------------>
+        <div class="tcs-details">
+            <div class="tcs-logo">
+                <img id="miniTCS" src="https://bucketdakota.s3.amazonaws.com/front-end/imgs/mini-logoTCS.png" alt="TCS">
+            </div>
+        </div>
+    </div>
+
+    <!------------MENU HAMB. E LOGO ISELECT------------>
+    <section class="home-section">
+        <div class="home-content">
+            <div class="backgIcon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    </section>
+    <div class="header-iSelect">
+        <h3>ISELECT</h3>
+        <div class="user-text">
+    
+            <div class="div-Icones">
+            
+                <a href="/info-user-gestor">
+                    <span class="material-symbols-outlined header-icons">account_circle</span>
+                </a>
+            
+                <a href="/">
+                    <span class="material-symbols-outlined header-icons">logout</span>
+                </a>
+    
+            </div>
+    
+            <div class="user">
+                <span class="id-user">JÚLIA BASTOS <br> G-2897133 </span>
+            </div>
+        </div>
+    
+    
+    </div>
+
+    
+    <!------------JS SIDEBAR------------>
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".fa-bars");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+            backgIcon.classList.toggle("close");
+        });
+
+    </script>
+
+    <!------------ FIM DA SIDEBAR ------------>
+
+    <!---------------------------------->
+    <!------- CONTAINER E FORMS -------->
+
+    <div class="padding-container">
+        <div class="header-Page">
+            <div class="arrow-chevron">
+                <a class="arrow-chevron" href="/infoVagas-gestor">
+                    <i class="fa-solid fa-chevron-left"></i></a>
+            <h1>Edit workitem</h1>
+        </div>
+        </div>
+        
+        
+        <div class="div-Central">
+            <div class="div-IDWork">
+                <h4>BED1221</h4>
+        
+            </div>
+        
+            <div class="div-TitleWork">
+                <h2>AB - Back-end Developer </h2>
+            </div>
+        
+            <div class="div-Buttons">
+                <div class="submitCriar">
+                    <button type="submit" class="btn btn-primary" style="color:#292929;">Save</button>
+
+        
+               
+            </div>
+            <div class="div-Edit">
+                <i class="fa-regular fa-folder-open"></i>
+        
+            </div>
+        </div>
+    </div>
+        
+        <h5>Created by BRADESCO BFSI2 on 18/08/2022 06:03 AM</h5>
+
+        <div class="ctnFlex">
+            <div class="left1">
+
+                <form>
+
+                    <label for="title">Title</label>
+                    <input type="title" class="form-control" id="title"><br>
+
+                    <label for="description">Description</label>
+                    <textarea class="form-control" id="description" rows="3"></textarea><br>
+
+
+                    <label for="customer_info">Customer/Area</label>
+                    <input type="customer_info" class="form-control" id="customer_info"><br>
+
+                    <label for="linkedin_url">Linkedin URL (Link)</label>
+                    <input type="linkedin_url" class="form-control" id="linkedin_url"><br>
+
+                    <label for="work_location">Location Work</label>
+                    <input type="work_location" class="form-control" id="work_location"><br>
+
+                    <div class="cluster">Cluster</div>
+                    <select class="form-select" aria-label="cluster">
+                        <option selected>Select Option</option>
+                        <option value="1"> BFSI1 </option>
+                        <option value="2"> BFSI2 </option>
+                        <option value="3"> BFSI-Brazil </option>
+                        <option value="4"> BFSI-NGM-Latam-Patent </option>
+                        <option value="5"> N/A</option>
+                    </select><br>
+
+                    <div class="need_client_interview">Need Client Interview?</div>
+                    <select class="form-select" aria-label="need_client_interview">
+                        <option selected>Select option</option>
+                        <option value="1">Yes</option>
+                        <option value="2"> No </option>
+                    </select><br>
+
+                    <div class="new_position_or_replacement">New Position or Replacement</div>
+                    <select class="form-select" aria-label="new_position_or_replacement">
+                        <option selected>Select Option</option>
+                        <option value="1">New position</option>
+                        <option value="2"> Replacement </option>
+                        <option value="3"> N/A (Role Change RGS) </option>
+                    </select><br>
+
+            </div>
+
+            <!-- CAIXA 2 -->
+
+            <div class="right2">
+
+
+                <label for="priority">Priority</label>
+                <input type="priority" class="form-control" id="priority"><br>
+
+                <div class="status_open_position">Status</div>
+                <select class="form-select" aria-label="status_open_position">
+                    <option selected>Open Positions</option>
+                    <option value="1">Profile Shared</option>
+                    <option value="2"> Evaluating Candidates </option>
+                    <option value="3">On Hold </option>
+                    <option value="4"> HR - Directed To HR </option>
+                    <option value="5"> HR Inteview Done </option>
+                    <option value="6"> HR - EP Registration </option>
+                    <option value="7"> HR - WorkFlow Aprove </option>
+                    <option value="8"> HR Offer Letter </option>
+                    <option value="9"> HR - Hiring Kit </option>
+                    <option value="10"> HR - DOJ CONFIRMED </option>
+                    <option value="11"> DONE </option>
+
+                </select><br>
+
+
+                <div class="name_main_skill">Type/Main Skill</div>
+                <select class="form-select" aria-label="name_main_skill">
+                    <option selected>Types</option>
+                    <option value="1">.NET</option>
+                    <option value="2">.NET CORE </option>
+                    <option value="3">AGILE</option>
+                    <option value="4">JAVA</option>
+                </select><br>
+
+                <div class="name_hs">Owner</div>
+                <select class="form-select" aria-label="name_hs">
+                    <option selected>Select Option</option>
+                    <option value="1"> Adriana Fileto </option>
+                    <option value="2"> Alexandre Sarda </option>
+                    <option value="3"> Aline Storck </option>
+                    <option value="4"> Ana Paula Richter </option>
+                    <option value="5"> Anderson Bastos </option>
+                    <option value="6"> Anderson de Souza </option>
+                    <option value="7"> Andre Francisco </option>
+                </select><br>
+
+                <div class="seniority_required">Seniority Level Required</div>
+                <select class="form-select" aria-label="seniority_required">
+                    <option selected>Select Option</option>
+                    <option value="1">Intern</option>
+                    <option value="2"> Trainee (O-1 EXP YEARS) </option>
+                    <option value="3">Junior (1 - 2 EXP. YEARS) </option>
+                    <option value="4">Pleno (2-4 EXP YEARS)</option>
+                    <option value="5">Senior (4-6 EXP YEARS)</option>
+                    <option value="6">Specialist (+6 EXP YEARS)</option>
+                    <option value="7">Consultant (+6 EXP YEARS)</option>
+                </select><br>
+
+                <label for="minimum_experience_years">Minimum Experience In Years</label>
+                <input type="minimum_experience_years" class="form-control" id="minimum_experience_years"><br>
+
+
+                <div class="name_customer">Customer</div>
+                <select class="form-select" aria-label="name_customer">
+                    <option selected>Select option</option>
+                    <option value="1"> ACI Payments </option>
+                    <option value="2"> AIG Brazil </option>
+                    <option value="3"> AON </option>
+                    <option value="4"> Banco Tayota </option>
+                    <option value="5"> Bradesco </option>
+                    <option value="6"> Bradesco BPS </option>
+                    <option value="7"> Bradesco Seguros </option>
+                    <option value="8"> BrasilSeg </option>
+                    <option value="9"> CIELO S/A </option>
+                    <option value="10"> CIELO </option>
+                    <option value="10"> N/A </option>
+                </select><br>
+
+                <div class="work_model">Model Work</div>
+                <select class="form-select" aria-label="work_model">
+                    <option selected>Select option</option>
+                    <option value="1"> Home-office </option>
+                    <option value="2"> Customer site </option>
+                    <option value="3"> Hybrid </option>
+                </select><br>
+
+
+                <div class="spanish">Spanish(Required)</div>
+                <select class="form-select" aria-label="spanish">
+                    <option selected> </option>
+                    <option value="1">N/A</option>
+                    <option value="2"> BASIC </option>
+                    <option value="3"> INTERMEDIARY </option>
+                    <option value="4">ADVANCED</option>
+                    <option value="4">FLUENT</option>
+                </select><br>
+
+                <div class="english">English(Required)</div>
+                <select class="form-select" aria-label="english">
+                    <option selected> </option>
+                    <option value="1">N/A</option>
+                    <option value="2"> BASIC </option>
+                    <option value="3"> INTERMEDIARY </option>
+                    <option value="4">ADVANCED</option>
+                    <option value="4">FLUENT</option>
+                </select><br>
+
+                <div class="titles1">CP</div>
+                <select class="form-select" aria-label="customer" required>
+                    <option selected></option>
+                    <option value="1"> BFSI </option>
+                    <option value="2"> Bradesco </option>
+                    <option value="3"> CIELO S/A </option>
+                    <option value="4"> CL-BTS </option>
+                    <option value="5"> EDENRED S.A. </option>
+                    <option value="6"> Global </option>
+                    <option value="7"> Porto Seguro </option>
+                    <option value="8"> Itaú Group </option>
+                    <option value="9"> Mapfire </option>
+                    <option value="10"> NGM-LATAM-Parent </option>
+                    <option value="10"> Santander </option>
+                </select><br>
+
+                <div class="titles1">Cloud Skill</div>
+                <select class="form-select" aria-label="Skills" required>
+                    <option selected></option>
+                    <option value="1">yes</option>
+                    <option value="2">no</option>
+                </select><br>
+
+                <label for="won">WON</label>
+                <input type="won" class="form-control" id="won" required><br>
+
+            </div>
+            </form>
+
+        </div>
+        <div>
+            <br><br>
+
+
+
+</body>
+
+<footer></footer>
+
+<script>
+    function clickMenu() {
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+        } else {
+            itens.style.display = 'block'
+        }
+    }
+</script>
+
+</html>

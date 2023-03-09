@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profiles</title>
+    <link rel="stylesheet" href="style/profiles.css">
+    <link rel="stylesheet" href="style/search-table.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/f0fb8c41b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!------------SIDEBAR------------>
+    <div class="close sidebar">
+        <ul class="nav-list">
+        
+            <li>
+                <a href="/admin">
+                    <span class="material-symbols-outlined sid-icons">grid_view</span>
+                    <span class="link_name sid-icons">EMPLOYEES</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/admin">Employees</a></li>
+                    </ul>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/open-positions-admin">
+                    <span class="material-symbols-outlined sid-icons">business_center</span>
+                    <span class="link_name sid-icons">OPEN POSITIONS</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/open-positions-admin">Open Positions</a></li>
+                    </ul>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/profiles-admin">
+                    <span class="material-symbols-outlined sid-icons">group</span>
+                    <span class="link_name">PROFILES</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/profiles-admin">Profiles</a></li>
+                    </ul>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/talents-admin">
+                    <span class="material-symbols-outlined sid-icons">folder_special</span>
+                    <span class="link_name">TALENTS</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/talents-admin">Talents</a></li>
+                    </ul>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/archive-admin">
+                    <span class="material-symbols-outlined sid-icons">inventory_2</span>
+                    <span class="link_name">ARCHIVE</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/archive-admin">Archive</a></li>
+                    </ul>
+                </a>
+            </li>
+        
+        </ul>
+
+        <!------------LOGO TCS - FINAL SIDEBAR ------------>
+        <div class="tcs-details">
+            <div class="tcs-logo">
+                <img id="miniTCS" src="https://bucketdakota.s3.amazonaws.com/front-end/imgs/mini-logoTCS.png" alt="TCS">
+            </div>
+        </div>
+    </div>
+
+    <!------------MENU HAMB. E LOGO ISELECT------------>
+    <section class="home-section">
+        <div class="home-content">
+            <div class="backgIcon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    </section>
+    <div class="header-iSelect">
+        <h3>ISELECT</h3>
+        <div class="user-text">
+    
+            <div class="div-Icones">
+                <a href="/info-user-admin">
+                    <span class="material-symbols-outlined header-icons">account_circle</span>
+                </a>
+            
+                <a href="/">
+                    <span class="material-symbols-outlined header-icons">logout</span>
+                </a>
+            </div>
+    
+            <div class="user">
+                <span class="id-user">GABRIEL CAMACHO <br> A-2439193 </span>
+            </div>
+        </div>
+    
+    
+    </div>
+
+
+    <!------------ FIM DA SIDEBAR ------------>
+
+        <!---------------------------------->
+        <!------- CONTAINER E FORMS -------->
+
+        <div class="padding-container">
+            <div class="open-positions">
+                <h1>Profiles</h1>
+                <button class="open-positions-button">
+                    <a href="/cadastrar-candidato-admin"><span class="material-icons">add</span>
+                        Add</a>
+                </button>
+            </div>
+
+            <!-- TABELA -->
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search roles.." title="Type in a name">
+            <table id="myTable">
+                <tr class="header">
+                    <th>Full Name</th>
+                    <th>Seniority</th>
+                    <th>Main Skill</th>
+                    <th>Job Opportunity</th>
+                    <th></th>
+                </tr>
+                <tbody id="table-profiles">
+                    <tr>
+                        <td>Felipe Bertoli</td>
+                        <td>Senior</td>
+                        <td>AWS</td>
+                        <td>AWS Manager</td>
+                        <td>
+                            <a href="/info-Candidates-admin-profiles" class="row-see-button">
+                                <span class="material-symbols-outlined">
+                                    open_in_new
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Laura Valente</td>
+                        <td>Pleno</td>
+                        <td>.NET</td>
+                        <td>Back End Developer</td>
+                        <td>
+                            <a href="/info-Candidates-admin-profiles" class="row-see-button">
+                                <span class="material-symbols-outlined">
+                                    open_in_new
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Giovanna Hirai</td>
+                        <td>Senior</td>
+                        <td>Python</td>
+                        <td>Data Analyst</td>
+                        <td>
+                            <a href="/info-Candidates-admin-profiles" class="row-see-button">
+                                <span class="material-symbols-outlined">
+                                    open_in_new
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Deyse Oshiro</td>
+                        <td>Junior</td>
+                        <td>Java</td>
+                        <td>Back End Developer</td>
+                        <td>
+                            <a href="/info-Candidates-admin-profiles" class="row-see-button">
+                                <span class="material-symbols-outlined">
+                                    open_in_new
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Willian Pedroso</td>
+                        <td>Senior</td>
+                        <td>C#</td>
+                        <td>Tester</td>
+                        <td>
+                            <a href="/info-Candidates-admin-profiles" class="row-see-button">
+                                <span class="material-symbols-outlined">
+                                    open_in_new
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Victor Messias</td>
+                        <td>Senior</td>
+                        <td>React</td>
+                        <td>Mobile Developer</td>
+                        <td>
+                            <a href="/info-Candidates-admin-profiles" class="row-see-button">
+                                <span class="material-symbols-outlined">
+                                    open_in_new
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Luis Felipe</td>
+                        <td>Junior</td>
+                        <td>OutSystems</td>
+                        <td>Web Developer</td>
+                        <td>
+                            <a href="/info-Candidates-admin-profiles" class="row-see-button">
+                                <span class="material-symbols-outlined">
+                                    open_in_new
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- <script>
+            async function getContent() {
+                try {
+                    const response = await fetch('http://localhost:4568/')
+                    //console.log(response)
+                    const data = await response.json()
+                    show(data)
+            
+                } catch (error) {
+                    console.error(error)
+                }
+            
+                function show(users){
+                    let output = ''
+            
+                    for(let user of users){
+                        output += `<tr>
+                                        <td>${user.fullName}</td>
+                                        <td>${user.seniority}</td>
+                                        <td>${user.mainSkill}</td>
+                                        <td>${user.job}</td>
+                                        <td>
+                                            <a href="" class="row-see-button">
+                                                <span class="material-symbols-outlined">
+                                                    open_in_new
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>`
+                    }
+                    document.getElementById('table-profiles').innerHTML = output
+                }
+            }
+            
+            getContent()
+        </script> -->
+
+
+
+        <script>
+            function myFunction() {
+                var input, filter, table, tr, td, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("myTable");
+                tr = table.getElementsByTagName("tr");
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[0];
+                    if (td) {
+                        txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                        } else {
+                            tr[i].style.display = "none";
+                        }
+                    }
+                }
+            }
+
+
+            function filterTable() {
+                // Variables
+                let dropdown, table, rows, cells, country, filter;
+                dropdown = document.getElementById("status");
+                table = document.getElementById("myTable");
+                rows = table.getElementsByTagName("tr");
+                filter = dropdown.value;
+
+                // Loops through rows and hides those with countries that don't match the filter
+                for (let row of rows) { // `for...of` loops through the NodeList
+                    cells = row.getElementsByTagName("td");
+                    country = cells[1] || null; // gets the 2nd `td` or nothing
+                    // if the filter is set to 'All', or this is the header row, or 2nd `td` text matches filter
+                    if (filter === "All" || !country || (filter === country.textContent)) {
+                        row.style.display = ""; // shows this row
+                    }
+                    else {
+                        row.style.display = "none"; // hides this row
+                    }
+                    console.log(country)
+                }
+            }
+
+            //sidebar
+            let arrow = document.querySelectorAll(".arrow");
+            for (var i = 0; i < arrow.length; i++) {
+                arrow[i].addEventListener("click", (e) => {
+                    let arrowParent = e.target.parentElement.parentElement;
+                    arrowParent.classList.toggle("showMenu");
+                });
+            }
+            let sidebar = document.querySelector(".sidebar");
+            let sidebarBtn = document.querySelector(".fa-bars");
+            console.log(sidebarBtn);
+            sidebarBtn.addEventListener("click", () => {
+                sidebar.classList.toggle("close");
+                backgIcon.classList.toggle("close");
+            });
+        </script>
+
+</body>
+
+</html>

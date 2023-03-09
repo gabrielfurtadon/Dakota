@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Candidato</title>
+    <link rel="stylesheet" href="/style/cadastrar-candidato.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../../styles/infoVagas-css.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/f0fb8c41b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+    <!------------SIDEBAR------------>
+    <div class="close sidebar">
+
+        <ul class="nav-list">
+
+            <li>
+                <a href="/admin">
+                    <span class="material-symbols-outlined sid-icons">grid_view</span>
+                    <span class="link_name sid-icons">EMPLOYEES</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/admin">Employees</a></li>
+                    </ul>
+                </a>
+            </li>
+
+            <li>
+                <a href="/open-positions-admin">
+                    <span class="material-symbols-outlined sid-icons">business_center</span>
+                    <span class="link_name sid-icons">OPEN POSITIONS</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/open-positions-admin">Open Positions</a></li>
+                    </ul>
+                </a>
+            </li>
+
+            <li>
+                <a href="/profiles-admin">
+                    <span class="material-symbols-outlined sid-icons">group</span>
+                    <span class="link_name">PROFILES</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/profiles-admin">Profiles</a></li>
+                    </ul>
+                </a>
+            </li>
+
+            <li>
+                <a href="/talents-admin">
+                    <span class="material-symbols-outlined sid-icons">folder_special</span>
+                    <span class="link_name">TALENTS</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/talents-admin">Talents</a></li>
+                    </ul>
+                </a>
+            </li>
+
+            <li>
+                <a href="/archive-admin">
+                    <span class="material-symbols-outlined sid-icons">inventory_2</span>
+                    <span class="link_name">ARCHIVE</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/archive-admin">Archive</a></li>
+                    </ul>
+                </a>
+            </li>
+
+        </ul>
+
+        <!------------LOGO TCS - FINAL SIDEBAR ------------>
+        <div class="tcs-details">
+            <div class="tcs-logo">
+                <img id="miniTCS" src="https://bucketdakota.s3.amazonaws.com/front-end/imgs/mini-logoTCS.png" alt="TCS">
+            </div>
+        </div>
+    </div>
+
+    <!------------MENU HAMB. E LOGO ISELECT------------>
+    <section class="home-section">
+        <div class="home-content">
+            <div class="backgIcon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    </section>
+    <div class="header-iSelect">
+        <h3>ISELECT</h3>
+        <div class="user-text">
+
+            <div class="div-Icones">
+
+                <a href="/info-user-admin">
+                    <span class="material-symbols-outlined header-icons">account_circle</span>
+                </a>
+
+                <a href="/">
+                    <span class="material-symbols-outlined header-icons">logout</span>
+                </a>
+
+            </div>
+
+            <div class="user">
+                <span class="id-user">LUANA ALVES <br> H-2897133 </span>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!------------ FIM DA SIDEBAR ------------>
+
+
+    <!---------------------------------->
+    <!------- CONTAINER E FORMS -------->
+
+    <div class="padding-container">
+        <div class="general">
+
+            <div class="arrow-chevron">
+                <a class="arrow-chevron" href="/profiles-rh">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+
+                <div class="header-Page">
+                    <h1>Add Profile</h1>
+
+                    <div class="div-buttons">
+                        <div class="submitCriar">
+                            <button type="submit" class="btn btn-primary" style="color:#292929;">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ctnFlex">
+                <form style="display: flex; width:100%; ">
+
+                    <div class="left1">
+                        <label for="file_name">Full Name</label>
+                        <input class="form-control" id="file_name" type="text" placeholder="file_name"
+                            aria-label="default input example" required name="file_name">
+                        <br>
+
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control email" id="email" placeholder="name@example.com">
+                        <br>
+
+
+                        <label for="phone">Contact Phone</label><br>
+                        <input type="number" id="phone" name="phone" class="form-control"
+                            placeholder="(00) 00 0000-0000"><br>
+
+
+                        <label for="location">Location</label>
+                        <input type="text" id="location" class="form-control" placeholder="location">
+                        <br>
+
+
+                        <label for="shared_with_cust_date">Interview Date</label>
+                        <input type="shared_with_cust_date" class="form-control" id="shared_with_cust_date"
+                            name="shared_with_cust_date"> <br>
+
+
+                        <label for="curriculo">Curriculum</label>
+                        <input type="file" id="curriculo" class="form-control" name="curriculo"
+                            placeholder="Clique aqui">
+                        <br>
+
+
+                        <div class="mb-3">
+                            <label for="resolution_comments" class="form-label">Resolution Comments</label>
+                            <textarea class="form-control" id="resolution_comments" rows="3"></textarea><br>
+
+
+                            <div class="mb-3">
+                                <label for="candidate_screening_resolution" class="form-label">Candidate Screening
+                                    Resolution</label>
+                                <textarea class="form-control" id="candidate_screening_resolution"
+                                    rows="3"></textarea><br>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CAIXA 2 -->
+
+                    <div class="right2">
+
+                        <label for="feedback">Feedback</label>
+                        <select required id="feedback" name="feedback" class="form-select"
+                            aria-label="Default select example">
+                            <option selected></option>
+                            <option value="5">PROFILE - PENDING EVALUATION</option>
+                            <option value="5">APPROVED - IN HIRING PROCESS </option>
+                            <option value="2">APPROVED - NOT DIRECTED TO HR</option>
+                            <option value="3">APPROVED - SENT FOR MANAGER EVALUATION</option>
+                            <option value="4">APPROVED - SHARED WITH CLIENT</option>
+                            <option value="5">NOT APPROVED</option>
+                            <option value="5">NOT APPROVED - TECHNICAL REASONS </option>
+                            <option value="2">NOT APPROVED - HIGH SALARY EXPECTATION</option>
+                            <option value="3">NOT APPROVED - BEHAVIORAL REASONS</option>
+                            <option value="4">NOT APPROVED - DOES NOT MEET THE REQUERIMENTS</option>
+                            <option value="5">DECLINED</option>
+                            <option value="5">DECLINED - IN HIRING PROCESS </option>
+                            <option value="2">RETURNED TO HR</option>
+                            <option value="3">RETURNED TO HR - CANDIDATE DOES NOT ANSWER CALLS/MESSAGES</option>
+
+                        </select><br>
+
+                        <label for="skill">Type/Main-Skill</label>
+                        <select id="skill" name="skill" class="form-select" aria-label="Default select example">
+                            <option selected>Type/Main Skill</option>
+                            <option value="5">Angular</option>
+                            <option value="2">Api Developer</option>
+                            <option value="3">Cobol</option>
+                            <option value="4">AWS</option>
+                            <option value="5">C++</option>
+                            <option value="6">Data Scientist</option>
+                            <option value="7">Desenvolvedor Back End Java</option>
+                            <option value="8">Desenvolvedor Back End Phyton</option>
+                            <option value="9">Desenvolvedor Front End</option>
+                            <option value="1">SalesForce</option>
+                            <option value="2">React Js</option>
+                        </select><br>
+
+                        <label for="salary_intention">Salary Intention</label>
+                        <input class="form-control" id="salary_intention" type="text" placeholder="Salary intention"
+                            aria-label="default input example">
+                        <br>
+
+                        <label for="english">English</label>
+                        <select id="english" name="english" class="form-select" aria-label="Default select example">
+                            <option selected></option>
+                            <option value="5">N/A</option>
+                            <option value="5">BASIC</option>
+                            <option value="2">INTERMEDIARY</option>
+                            <option value="3">ADVANCED</option>
+                            <option value="4">FLUENT</option>
+                        </select><br>
+
+                        <label for="spanish">Spanish</label>
+                        <select id="spanish" name="spanish" class="form-select" aria-label="Default select example">
+                            <option selected></option>
+                            <option value="5">N/A</option>
+                            <option value="5">BASIC</option>
+                            <option value="2">INTERMEDIARY</option>
+                            <option value="3">ADVANCED</option>
+                            <option value="4">FLUENT</option>
+                        </select><br>
+
+                        <label for="seniority">Seniority Level</label>
+                        <select id="seniority" name="seniority" class="form-select" aria-label="Default select example">
+                            <option selected></option>
+                            <option value="5">INTERN</option>
+                            <option value="5">TRAINEE(0-1 EXP. YEARS)</option>
+                            <option value="2">JR(1-2 EXP. YEARS)</option>
+                            <option value="3">PL(2-4 EXP. YEARS)</option>
+                            <option value="4">SR(4-6 EXP. YEARS)</option>
+                            <option value="3">SPECIALIST(+6 EXP. YEARS)</option>
+                            <option value="4">CONSULTANT(+6 EXP. YEARS)</option>
+                        </select><br>
+
+
+                        <label for="name_role">Role</label>
+                        <select id="role" name="role" class="form-select" aria-label="Default select example">
+                            <option selected></option>
+                            <option value="5">ADMINISTRADOR DE BANCO DE DADOS</option>
+                            <option value="2">ANALISTA DE NEGÓCIOS </option>
+                            <option value="3">ANALISTA DE SEGURANCA DA INFORMACAO</option>
+                            <option value="4">ANALISTA DE SISTEMA DE INFORMAÇÃO</option>
+                            <option value="3">ANALISTA DE SISTEMAS</option>
+                            <option value="4">ANALISTA DE SUPORTE A INFRAESTRUTURA </option>
+
+                            <option value="5">ANALISTA DE SUPORTE A SISTEMAS </option>
+                            <option value="2">ANALISTA DE TESTE </option>
+                            <option value="3">ANALISTA DESENVOLVEDOR</option>
+                            <option value="4">ANALISTA FUNCIONAL</option>
+                            <option value="3">ANALISTA TRAINEE</option>
+                            <option value="4">ARQUITETO DE APLICAÇÕES</option>
+                        </select><br>
+
+
+                        <label for="current_employer">Current Employer</label>
+                        <input type="text" id="current_employer" class="form-control" placeholder="current_employer">
+                        <br>
+
+
+                        <label for="profile_source">Profile Source</label><br>
+                        <input type="url" id="profile-source" class="form-control" name="profile-source"
+                            placeholder="Url">
+                        <br>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+            <!------------JS SIDEBAR------------>
+            <script>
+                let arrow = document.querySelectorAll(".arrow");
+                for (var i = 0; i < arrow.length; i++) {
+                    arrow[i].addEventListener("click", (e) => {
+                        let arrowParent = e.target.parentElement.parentElement;
+                        arrowParent.classList.toggle("showMenu");
+                    });
+                }
+                let sidebar = document.querySelector(".sidebar");
+                let sidebarBtn = document.querySelector(".fa-bars");
+                console.log(sidebarBtn);
+                sidebarBtn.addEventListener("click", () => {
+                    sidebar.classList.toggle("close");
+                    backgIcon.classList.toggle("close");
+                });
+
+            </script>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

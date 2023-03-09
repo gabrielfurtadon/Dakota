@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Position</title>
+    <link rel="stylesheet" href="style/create-positions.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/f0fb8c41b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!------------SIDEBAR------------>
+    <div class="close sidebar">
+
+        <ul class="nav-list">
+            
+            <li>
+                <a href="/manager">
+                    <span class="material-symbols-outlined sid-icons">business_center</span>
+                    <span class="link_name sid-icons">OPEN POSITIONS</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/manager">Open Positions</a></li>
+                    </ul>
+                </a>
+            </li>
+
+            <li>
+                <a href="/profiles-gestor">
+                    <span class="material-symbols-outlined sid-icons">group</span>
+                    <span class="link_name">PROFILES</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/profiles-gestor">Profiles</a></li>
+                    </ul>
+                </a>
+            </li>
+
+            <li>
+                <a href="/talents-gestor">
+                    <span class="material-symbols-outlined sid-icons">folder_special</span>
+                    <span class="link_name">TALENTS</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/talents-gestor">Talents</a></li>
+                    </ul>
+                </a>
+            </li>
+
+            <li>
+                <a href="/archive-gestor">
+                    <span class="material-symbols-outlined sid-icons">inventory_2</span>
+                    <span class="link_name">ARCHIVE</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/archive-gestor">Archive</a></li>
+                    </ul>
+                </a>
+            </li>
+
+            <li>
+                <a href="/">
+                    <span class="material-symbols-outlined sid-icons">logout</span>
+                    <span class="link_name">LOGOUT</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/">Logout</a></li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+        <!------------LOGO TCS - FINAL SIDEBAR ------------>
+        <div class="tcs-details">
+            <div class="tcs-logo">
+                <img id="miniTCS" src="https://bucketdakota.s3.amazonaws.com/front-end/imgs/mini-logoTCS.png" alt="TCS">
+            </div>
+        </div>
+    </div>
+
+    <!------------MENU HAMB. E LOGO ISELECT------------>
+    <section class="home-section">
+        <div class="home-content">
+            <div class="backgIcon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    </section>
+    <div class="header-iSelect">
+        <h3>ISELECT</h3>
+        <div class="user-text">
+            <div class="user">
+                <span class="id-user">JÚLIA BASTOS <br> G-2897133 </span>
+            </div>
+        </div>
+    </div>
+   
+
+    <!------------JS SIDEBAR------------>
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".fa-bars");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+            backgIcon.classList.toggle("close");
+        });
+
+    </script>
+
+    <!------------ FIM DA SIDEBAR ------------>
+
+    <!---------------------------------->
+    <!------- CONTAINER E FORMS -------->
+
+    <div class="padding-container">
+
+        <div class="arrow-chevron">
+            <a class="arrow-chevron" href="/manager">
+                <i class="fa-solid fa-chevron-left"></i></a>
+            <h1>Create Positions</h1>
+            
+        </div>
+
+        <div class="div-Central">
+            <div class="div-TitleWork">
+                <h2>Manager | Create Vacancies </h2>
+            </div>
+
+            <div class="div-Edit">
+                <div class="submitCriar">
+                    <button type="submit" class="btn btn-primary" style="color:#292929;">Save</button>
+                </div>
+            </div>
+        </div>
+
+
+        <h5> </h5>
+
+        <div class="ctnFlex">
+            <div class="left1">
+
+                <form action="/createPosition" method="post">
+
+                    <label for="title">Title</label>
+                    <input  name="title" type="title" class="form-control" id="title"><br>
+
+                    <label name="description" for="description">Description</label>
+                    <textarea class="form-control" id="description" rows="3"></textarea><br>
+
+
+                    <label for="customer_info">Customer/Area</label>
+                    <input name="customerArea" type="customer_info" class="form-control" id="customer_info"><br>
+
+                    <label for="linkedin_url">Linkedin URL (Link)</label>
+                    <input name="linkedin" type="linkedin_url" class="form-control" id="linkedin_url"><br>
+
+                    <label for="work_location">Location Work</label>
+                    <input name="locationWork" type="work_location" class="form-control" id="work_location"><br>
+
+                    <div class="cluster">Cluster</div>
+                    <select name="cluster" class="form-select" aria-label="cluster">
+                        <option selected>Select Option</option>
+                        <option> BFSI1 </option>
+                        <option> BFSI2 </option>
+                        <option> BFSI-Brazil </option>
+                        <option> BFSI-NGM-Latam-Patent </option>
+                        <option> N/A</option>
+                    </select><br>
+
+                    <div class="need_client_interview">Need Client Interview?</div>
+                    <select name="interview" class="form-select" aria-label="need_client_interview">
+                        <option selected>Select option</option>
+                        <option>Yes</option>
+                        <option> No </option>
+                    </select><br>
+
+                    <div class="new_position_or_replacement">New Position or Replacement</div>
+                    <select name="newPosition" class="form-select" aria-label="new_position_or_replacement">
+                        <option selected>Select Option</option>
+                        <option>New position</option>
+                        <option> Replacement </option>
+                        <option> N/A (Role Change RGS) </option>
+                    </select><br>
+
+            </div>
+
+            <!-- CAIXA 2 -->
+
+            <div class="right2">
+
+
+                <label for="priority">Priority</label>
+                <input name="pritority" type="priority" class="form-control" id="priority"><br>
+
+                <div class="status_open_position">Status</div>
+                <select name="status" class="form-select" aria-label="status_open_position">
+                    <option selected>Open Positions</option>
+                    <option>Profile Shared</option>
+                    <option> Evaluating Candidates </option>
+                    <option>On Hold </option>
+                    <option> HR - Directed To HR </option>
+                    <option> HR Inteview Done </option>
+                    <option> HR - EP Registration </option>
+                    <option> HR - WorkFlow Aprove </option>
+                    <option> HR Offer Letter </option>
+                    <option> HR - Hiring Kit </option>
+                    <option> HR - DOJ CONFIRMED </option>
+                    <option> DONE </option>
+
+                </select><br>
+
+
+                <div class="name_main_skill">Type/Main Skill</div>
+                <select name="mainSkill" id="main-skill" class="form-select" aria-label="name_main_skill" name="main-skill">
+                </select><br>
+
+                <div class="name_hs">Owner</div>
+                <select name="owner"  class="form-select" aria-label="name_hs">
+                    <option selected>Select option</option>
+                    <option> Adriana Fileto </option>
+                    <option> Alexandre Sarda </option>
+                    <option> Aline Storck </option>
+                    <option> Ana Paula Richter </option>
+                    <option> Anderson Bastos </option>
+                    <option> Anderson de Souza </option>
+                    <option> Andre Francisco </option>
+                </select><br>
+
+                <div class="seniority_required">Seniority Level Required</div>
+                <select name="senLevel" class="form-select" aria-label="seniority_required">
+                    <option selected>Select option</option>
+                    <option>Intern</option>
+                    <option> Trainee (O-1 EXP YEARS) </option>
+                    <option>Junior (1 - 2 EXP. YEARS) </option>
+                    <option>Pleno (2-4 EXP YEARS)</option>
+                    <option>Senior (4-6 EXP YEARS)</option>
+                    <option>Specialist (+6 EXP YEARS)</option>
+                    <option>Consultant (+6 EXP YEARS)</option>
+                </select><br>
+
+                <label for="minimum_experience_years">Minimum Experience In Years</label>
+                <input name="MinExperience" type="minimum_experience_years" class="form-control" id="minimum_experience_years"><br>
+
+
+                <div class="name_customer">Customer</div>
+                <select name="customer" class="form-select" aria-label="name_customer">
+                    <option selected>Select Option</option>
+                    <option> ACI Payments </option>
+                    <option> AIG Brazil </option>
+                    <option> AON </option>
+                    <option> Banco Tayota </option>
+                    <option> Bradesco </option>
+                    <option> Bradesco BPS </option>
+                    <option> Bradesco Seguros </option>
+                    <option> BrasilSeg </option>
+                    <option> CIELO S/A </option>
+                    <option> CIELO </option>
+                    <option> N/A </option>
+                </select><br>
+
+                <div class="work_model">Model Work</div>
+                <select name="modelWork" class="form-select" aria-label="work_model">
+                    <option selected>Select Option</option>
+                    <option> Home-office </option>
+                    <option> Customer site </option>
+                    <option> Hybrid </option>
+                </select><br>
+
+
+                <div class="spanish">Spanish(Required)</div>
+                <select name="spanish" class="form-select" aria-label="spanish">
+                    <option selected> </option>
+                    <option>N/A</option>
+                    <option> BASIC </option>
+                    <option> INTERMEDIARY </option>
+                    <option>ADVANCED</option>
+                    <option>FLUENT</option>
+                </select><br>
+
+                <div class="english">English(Required)</div>
+                <select name="english" class="form-select" aria-label="english">
+                    <option selected> </option>
+                    <option>N/A</option>
+                    <option> BASIC </option>
+                    <option> INTERMEDIARY </option>
+                    <option>ADVANCED</option>
+                    <option>FLUENT</option>
+                </select>
+
+                <div class="titles1">CP</div>
+                <select name="cp" class="form-select" aria-label="customer" required>
+                    <option selected></option>
+                    <option> BFSI </option>
+                    <option> Bradesco </option>
+                    <option> CIELO S/A </option>
+                    <option> CL-BTS </option>
+                    <option> EDENRED S.A. </option>
+                    <option> Global </option>
+                    <option> Porto Seguro </option>
+                    <option> Itaú Group </option>
+                    <option> Mapfire </option>
+                    <option> NGM-LATAM-Parent </option>
+                    <option> Santander </option>
+                </select><br>
+
+                <div class="titles1">Cloud Skill</div>
+                <select name="cloudSkill" class="form-select" aria-label="Skills" required>
+                    <option selected></option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select><br>
+
+                <label for="won">WON</label>
+                <input name="won " type="won" class="form-control" id="won" required><br>
+
+            </div>
+            </form>
+
+        </div>
+        <div>
+            <br><br>
+
+
+            <script>
+                async function getContent() {
+                    try {
+                        const response = await fetch('http://localhost:4569/')
+                        //console.log(response)
+                        const data = await response.json()
+                        show(data)
+                
+                    } catch (error) {
+                        console.error(error)
+                    }
+                
+                    function show(users){
+                        let output = ''
+                
+                        for(let user of users){
+                            if(user.owner != "undefined"){
+                                output += ` <option value="${user.indexOf}">${user.name_main_skill}</option>`
+                            }
+                        }
+                        document.getElementById('main-skill').innerHTML = output
+                    }
+                }
+                
+                getContent()
+            </script>
+
+
+
+</body>
+
+<footer></footer>
+
+<script>
+    function clickMenu() {
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+        } else {
+            itens.style.display = 'block'
+        }
+    }
+</script>
+
+</html>

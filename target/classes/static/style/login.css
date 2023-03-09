@@ -1,0 +1,121 @@
+:root{
+    --primary-color: #0578D6;
+    --secondary-color: #D63677;
+    --text-color: #474747;
+    --text-color-blue: #20648E;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+aside{
+    background-image: url("https://bucketdakota.s3.amazonaws.com/front-end/imgs/tcs-login-banner.png");
+    height: 100vh;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    width: 200px;
+    object-fit: cover;
+}
+
+.software-title{
+    color: white;
+}
+
+main{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.page-title{
+    color: var(--secondary-color);
+}
+
+.description{
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+input{
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.btn-login{
+    color: var(--secondary-color);
+    font-weight: 500;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.438);
+    border-radius: 8px;
+    display: flex;
+    padding: 10px 20px;
+}
+
+
+.btn-login span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    color: var(--secondary-color);
+}
+
+.btn-login:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn-login:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.login-effect{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: var(--secondary-color);
+}
+
+
+@media (max-width: 769px) {
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+}
+
+.forgot-password{
+    text-decoration: none;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.forgot-password:hover{
+    color: #D63677;
+    cursor:pointer;
+}

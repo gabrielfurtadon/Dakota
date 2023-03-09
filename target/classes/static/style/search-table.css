@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap');
+
+:root {
+        --primary-color: #0578D6;
+        --secondary-color: #E41165;
+        --tcs-blue: #007DC5;
+        --tcs-pink: #E41165;
+        --tcs-danger: #BE0046;
+        --text-color: #474747;
+        --text-color-blue: #20648E;
+        --background-grey: rgb(235, 235, 235);
+        --background-darkblue: rgb(29, 29, 29);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Lato';
+    }
+
+    body {
+        background-color: #fff;
+    }
+
+#myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  outline: none;
+  border-radius: 6px;
+}
+
+
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+#myTable thead{
+  background-color: #f1f1f1;
+}
+
+#status{
+  border: none;
+  background-color: #f1f1f1;
+  line-height: 1.5;
+  color: #212529;
+  font-weight: 700;
+}
+
+/* NEW TABLE */
+
+#table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+
+.search-filters{
+  border: none;
+}
+
+.input{
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.filter-label{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+
+table, th, td {
+  padding: 8px;
+
+  border-collapse: collapse;
+  border-color: rgba(0, 0, 0, 0.25);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+form {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.form-control {
+  display: inline-block;
+}
+
+.form-control input {
+  margin: 0 8px;
+}

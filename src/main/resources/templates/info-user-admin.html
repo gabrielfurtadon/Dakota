@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info User</title>
+    <link rel="stylesheet" href="style/infoVagas.css">
+    <link rel="stylesheet" href="style/info-user.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/f0fb8c41b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+    
+    <!------------SIDEBAR------------>
+    <div class="close sidebar">
+
+        <ul class="nav-list">
+        
+            <li>
+                <a href="/admin">
+                    <span class="material-symbols-outlined sid-icons">grid_view</span>
+                    <span class="link_name sid-icons">EMPLOYEES</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/admin">Employees</a></li>
+                    </ul>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/open-positions-admin">
+                    <span class="material-symbols-outlined sid-icons">business_center</span>
+                    <span class="link_name sid-icons">OPEN POSITIONS</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/open-positions-admin">Open Positions</a></li>
+                    </ul>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/profiles-admin">
+                    <span class="material-symbols-outlined sid-icons">group</span>
+                    <span class="link_name">PROFILES</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/profiles-admin">Profiles</a></li>
+                    </ul>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/talents-admin">
+                    <span class="material-symbols-outlined sid-icons">folder_special</span>
+                    <span class="link_name">TALENTS</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/talents-admin">Talents</a></li>
+                    </ul>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/archive-admin">
+                    <span class="material-symbols-outlined sid-icons">inventory_2</span>
+                    <span class="link_name">ARCHIVE</span>
+                    <ul class="sub-menu blank">
+                        <li class="sub-subhover"><a href="/archive-admin">Archive</a></li>
+                    </ul>
+                </a>
+            </li>
+        
+        </ul>
+
+        <!------------LOGO TCS - FINAL SIDEBAR ------------>
+        <div class="tcs-details">
+            <div class="tcs-logo">
+                <img id="miniTCS" src="https://bucketdakota.s3.amazonaws.com/front-end/imgs/mini-logoTCS.png" alt="TCS">
+            </div>
+        </div>
+    </div>
+
+    <!------------MENU HAMB. E LOGO ISELECT------------>
+    <section class="home-section">
+        <div class="home-content">
+            <div class="backgIcon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    </section>
+    <div class="header-iSelect">
+        <h3>ISELECT</h3>
+        <div class="user-text">
+    
+            <div class="div-Icones">
+            
+                <a href="/info-user-admin">
+                    <span class="material-symbols-outlined header-icons">account_circle</span>
+                </a>
+            
+                <a href="/">
+                    <span class="material-symbols-outlined header-icons">logout</span>
+                </a>
+    
+            </div>
+    
+            <div class="user">
+                <span class="id-user">GABRIEL CAMACHO <br> A-2439193 </span>
+            </div>
+        </div>
+    
+    
+    </div>
+
+    <!------------ FIM DA SIDEBAR ------------>
+
+    <!---------------------------------->
+    <!------- CONTAINER E FORMS -------->
+
+    <div class="padding-container">
+
+        <div class="header-Page">
+            <div class="arrow-chevron">
+                <a class="arrow-chevron" href="/admin">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+                <h1>Profile Details</h1>
+            </div> 
+        </div>
+       
+
+        <div class="info-center">
+            <div class="div-icon">
+                <span class="material-symbols-outlined icon">
+                person
+                </span>
+            </div>
+            <div class="infos">
+                <div class="column1">
+                    <label for="">Full Name:</label>
+                    <span>Gabriel Henrique Pereira Camacho</span>
+                    <br>
+                    <label for="">ID TCS:</label>
+                    <span>2439193</span>
+                </div>
+                <div class="column2">
+                    <label for="">Position:</label>
+                    <span>HR Manager</span>
+                    <br>
+                    <label for="">Email:</label>
+                    <span>g.camacho@tcs.com</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
+<!------------JS SIDEBAR------------>
+<script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
+            let arrowParent = e.target.parentElement.parentElement;
+            arrowParent.classList.toggle("showMenu");
+        });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".fa-bars");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+        backgIcon.classList.toggle("close");
+    });
+
+</script>
+
+    <!------------ FIM ------------>
+
+</body>
+
+<footer></footer>
+
+
+
+</html>
